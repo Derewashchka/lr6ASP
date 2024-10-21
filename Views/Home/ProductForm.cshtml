@@ -1,0 +1,12 @@
+﻿<form asp-action="ProductForm" method="post">
+    @for (int i = 0; i < ViewBag.Count; i++)
+    {
+        <h3>Товар @(i + 1)</h3>
+        <label>Назва:</label>
+        <input type="text" name="products[@i].Name" required />
+
+        <label>Кількість:</label>
+        <input type="number" name="products[@i].Quantity" required min="1" />
+    }
+    <button type="submit">Завершити замовлення</button>
+</form>

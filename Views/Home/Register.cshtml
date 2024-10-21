@@ -1,0 +1,10 @@
+﻿<form asp-action="Register" method="post">
+    <label>Ім'я:</label>
+    <input type="text" name="Name" required />
+
+    <label>Дата народження:</label>
+    <input type="date" name="BirthDate" required />
+
+    <button type="submit">Зареєструватися</button>
+</form>
+<p>@ViewBag.Message</p>

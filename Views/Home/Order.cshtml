@@ -1,0 +1,6 @@
+﻿<form asp-action="Order" method="post">
+    <h2>Привіт, @ViewBag.UserName! Скільки одиниць товару ви бажаєте замовити?</h2>
+
+    <input type="number" name="productCount" min="1" step="1" required />
+    <button type="submit">Підтвердити</button>
+</form>
